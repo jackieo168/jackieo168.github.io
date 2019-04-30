@@ -12,7 +12,7 @@ $(document).ready(function() {
 		if(val1 == 100) {
 			document.getElementById("soln1link").innerHTML = solnLink1;
 		} else {
-			document.getElementById("soln1link").innerHTML = '';
+			document.getElementById("soln1link").innerHTML = "";
 		}		
 	}
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
 		if(val2 == 100) {
 			document.getElementById("soln2link").innerHTML = solnLink2;
 		} else {
-			document.getElementById("soln2link").innerHTML = '';	
+			document.getElementById("soln2link").innerHTML = "";	
 		}
 	}
 
@@ -34,11 +34,11 @@ $(document).ready(function() {
 		if(val3 == 100) {
      		document.getElementById("soln3link").innerHTML = solnLink3;
 		} else {
-  			document.getElementById("soln3link").innerHTML = '';
+  			document.getElementById("soln3link").innerHTML = "";
 		}
 	}
 
 	document.getElementById("soln1").onchange = getSoln1;
 	document.getElementById("soln2").onchange = getSoln2;
 	document.getElementById("soln3").onchange = getSoln3;
-})
+});
