@@ -1,0 +1,135 @@
+
+
+@media screen{
+
+	/*icon in navbar*/
+	#mail-img {
+		width: 60px;
+		height: 48px;
+		opacity: 1;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.mail-container {
+		width: 877px;
+		height: 989px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.mail-img {
+		transform: scale(.1);
+		opacity: .5;
+		animation-name: loadMail;
+		animation-duration: 1s;
+	    animation-delay: 0s;
+	}
+
+	@keyframes loadMail {
+	    0% {
+	        transform: scale(.1);
+			opacity: .5;
+	    }
+	    80% {
+	        transform: scale(.93);
+			opacity: 1;
+	    }
+	    100% {
+	    	transform: scale(.87);
+			opacity: 1;
+	    }
+	}
+
+	.mail-img {
+		transform: scale(.87);
+		opacity: 1;
+	}
+
+	form {
+		opacity: 0;
+		animation-name: loadForm;
+		animation-delay: 0s;
+		animation-duration: 2s;
+		font-family: 'Comfortaa', cursive;
+		font-size: 14pt;
+	}
+
+	@keyframes loadForm {
+	    0% {
+			opacity: 0;
+	    }
+	    80% {
+			opacity: 8;
+	    }
+	    100% {
+			opacity: 1;
+	    }
+	}
+
+	form{
+		opacity: 1;
+		font-family: 'Comfortaa', cursive;
+		font-size: 14pt;
+	}
+
+	.form {
+		position: absolute;
+		top: 25%;
+		left: 22%;
+	}
+
+	input[type=text], input[type=email] {
+		padding: 4px 20px;
+		font-family: 'Cutive Mono', monospace;
+		font-size: 14pt;
+		margin-top: 12px;
+		margin-bottom: 12px;
+		width: 400px;
+		height: 36px;
+		border-radius: 4px;
+		border: none;
+		background-color: #E5DBE9;
+	}
+
+	textarea {
+		padding: 12px 20px;
+		font-family: 'Cutive Mono', monospace;
+		font-size: 14pt;
+		font-weight: bold;
+		margin-top: 12px;
+		margin-bottom: 12px;
+		height: 312px;
+		width: 459px;
+		border: 4px solid #c6bfc9;
+		resize: none;
+		opacity: .7;
+	}
+
+	#submit {
+		cursor: pointer;
+		border-radius:8px;
+		font-family: 'Comfortaa', cursive;
+		font-size: 14pt;
+		width: 88px;
+		height: 44px;
+		border: none;
+		box-shadow: none;
+		background-color: #ff8787;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#submit:hover {
+		transform: scale(1.1);
+		transition-duration: .4s;
+	}
+}

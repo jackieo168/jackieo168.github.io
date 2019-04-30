@@ -1,0 +1,121 @@
+
+@media screen{
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .slider {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    -webkit-appearance: none;
+    width: 100px;
+    height: 10px;
+    border-radius: 4px;   
+    background: #bab8ba;
+    outline: none;
+    /*opacity: 0.7;*/
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #c48fc2;
+    cursor: pointer;
+  }
+
+  .slider::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+    transition-duration: .4s;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #c48fc2;
+    cursor: pointer;
+  }
+
+  .wksheet-img {
+    width: 216px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .wksheet:hover {
+    opacity: 1;
+    transition-duration: .4s;  
+  }
+
+  .wksheet {
+    position: relative;
+    top: 36px;
+    width: 216px;
+    height: 300px;
+    margin: 20px;
+    opacity: .7;
+  }
+
+  .wksheet-name {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    font-family: 'Cutive Mono', monospace;
+    color: purple;
+    font-size: 14pt;
+    font-weight: bold;
+  }
+
+  #wksheet-button {
+    border-radius: 16px;
+    font-weight: bold;
+    background-image: linear-gradient(#dfc9e8, #dbe6ff);
+  }
+
+  #soln1link {
+    font-family: 'Comfortaa', cursive;
+    color: purple;
+    font-size: 12pt;
+    text-decoration: none;
+    transition-duration: .4s;
+  }
+
+  #soln2link {
+    font-family: 'Comfortaa', cursive;
+    color: purple;
+    font-size: 12pt;
+    text-decoration: none;
+    transition-duration: .4s;
+  }
+
+  #soln3link {
+    font-family: 'Comfortaa', cursive;
+    color: purple;
+    font-size: 12pt;
+    text-decoration: none;
+    transition-duration: .4s;
+  }
+
+  p {
+    font-family: 'Comfortaa', cursive;
+    color: purple;
+    font-size: 12pt;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .instructions {
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+}

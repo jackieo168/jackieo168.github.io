@@ -1,0 +1,72 @@
+
+@media screen{
+
+	#mail-img {
+		opacity: .7;
+		width: 50px;
+		height: 40px;
+	}
+
+	#mail-img:hover {
+		width: 60px;
+		height: 48px;
+		transition-duration: .3s;
+		opacity: 1;
+	}
+
+	#feedback-img{
+		opacity: .7;
+		width: 43px;
+		height: 40px;
+	}
+
+	#feedback-img:hover {
+		width: 51.6px;
+		height: 48px;
+		transition-duration: .3s;
+		opacity: 1;	
+	}
+
+	.right-nav-button {
+		width: 65px;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}	
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#right-nav-buttons {
+		width: 134px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#left-nav-buttons {
+		display: flex;
+
+	}
+
+	.left-nav-button {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 16pt;
+		padding: 8px 12px 8px 12px;
+		border: 4px;
+		margin: 4px;
+		text-decoration: none;
+	}
+
+	.left-nav-button:hover {
+		font-weight: bolder;
+		transition-duration: .2s;
+	}
+}
+
+

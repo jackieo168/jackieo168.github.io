@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Jacqueline's Teaching Website </title>
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Cutive+Mono|Gloria+Hallelujah|Inconsolata|Indie+Flower|Pangolin|Quicksand:300,400|Roboto+Mono:300" rel="stylesheet">
+		<!-- link CSS, JS, JQuery -->
+		<link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/wksheet.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/wksheet.js" defer></script>
+	</head>
+
+	<body>
+
+		<nav> <!-- begin navbar -->
+			<div id="left-nav-buttons">
+				<a href="index.html" class="left-nav-button" id="home-button">Home</a>
+				<a href="wksheet.html" class="left-nav-button" id="wksheet-button">Worksheets</a>
+				<a href="index.html" class="left-nav-button" id="guides-button">Guides</a>
+				<a href="index.html" class="left-nav-button" id="advice-button">Advice</a>
+			</div><!--end pull left-->
+			<div id="right-nav-buttons">
+				<div class="right-nav-button">
+					<a href="index.html"><img class="right-nav-item" id="feedback-img" src="assets/images/feedback.png" alt="Anonymous Feedback"></a>
+				</div>
+				<div class="right-nav-button">
+					<a href="mail.html"><img class="right-nav-item" id="mail-img" src="assets/images/mail.PNG" alt="Mail"></a>
+				</div>
+			</div><!--end pull right-->
+		</nav><!--end navbar-->
+
+ 		<!-- -------------------------------------------------------- -->
+
+		<div class= "main-content"> <!-- begin main content -->
+			<div class="instructions">
+				<p>Click worksheets to view them.</p>
+				<p>Toggle sliders to get solution links.</p>
+			</div>
+			<div class="row 1">
+				<div class="wksheet 1">
+					<a href="https://drive.google.com/file/d/1Vx_gPCogP54qzWA0VNFUQdDJdUt3Cs8o/view?usp=sharing"><img class="wksheet-img 1" src="assets/images/wksheet.PNG" alt="Worksheet"></a>
+					<div class="wksheet-name 1"> Week 1 Worksheet </div>
+					<div class="slidecontainer">
+  						<input type="range" min="1" max="100" value="0" class="slider" id="soln1">
+  						<p id="soln1link"></p>
+					</div>
+				</div>
+				<div class="wksheet 2">
+					<a href="https://drive.google.com/file/d/1Lcc7CirnJxz8z6meSt4lRe3UWRLgzgVl/view?usp=sharing"><img class="wksheet-img 2" src="assets/images/wksheet.PNG" alt="Worksheet"></a>
+					<div class="wksheet-name 2"> Week 2 Worksheet </div>
+					<div class="slidecontainer">
+  						<input type="range" min="1" max="100" value="0" class="slider 1" id="soln2">
+  						<p id="soln2link"></p>
+					</div>
+				</div>
+				<div class="wksheet 3">
+					<a href="https://drive.google.com/file/d/1sjASNuPLyikhxSxifhDNW1B-dWN1grHD/view?usp=sharing"><img class="wksheet-img 3" src="assets/images/wksheet.PNG" alt="Worksheet"></a>
+					<div class="wksheet-name 3"> Week 3 Worksheet </div>
+					<div class="slidecontainer">
+  						<input type="range" min="1" max="100" value="0" class="slider 1" id="soln3">
+  						<p id="soln3link"></p>
+					</div>
+				</div>
+			</div>
+			
+		</div> <!-- end main content -->
+
+		
+
+	</body>
+</html>
