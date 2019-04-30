@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
 	var slider1 = document.getElementById("soln1");
@@ -43,4 +41,4 @@ $(document).ready(function() {
 	document.getElementById("soln1").onchange = getSoln1;
 	document.getElementById("soln2").onchange = getSoln2;
 	document.getElementById("soln3").onchange = getSoln3;
-});
+})
