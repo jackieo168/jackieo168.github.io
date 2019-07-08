@@ -1,0 +1,20 @@
+@media screen {
+	iframe {
+		width: 800px;
+		height: 900px;
+		border-radius: 4px;
+		border-style: none;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center
+	}
+
+	#guides-button {
+		border-radius: 16px;
+		font-weight: bold;
+		background-image: linear-gradient(#dfc9e8, #dbe6ff);
+	}
+}

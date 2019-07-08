@@ -64,7 +64,7 @@
 		border-radius: 3px;
 	}
 
-	.eraser-img {
+/*	.eraser-img {
 		width: 44px;
 		height: 24px;
 		position: absolute;
@@ -76,7 +76,7 @@
 	.eraser-img:hover {
 		transform: scale(1.3);
 		transition-duration: .4s;
-	}
+	}*/
 
 	.chalk {
 		width: 42px;
@@ -97,6 +97,29 @@
 	}
 
 	.chalk:hover {
+		transform: scale(1.3);
+		transition-duration: .4s;
+	}
+
+	.chalkb {
+		width: 42px;
+		height: 24px;
+		background-color: #9BBD8A;
+		border-radius: 2px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Pangolin', cursive;
+		color: white;
+		font-size: 16pt;
+		position: absolute;
+		top: 200px;
+		left: 50px;
+		cursor: pointer;
+	}
+
+	.chalkb:hover {
 		transform: scale(1.3);
 		transition-duration: .4s;
 	}

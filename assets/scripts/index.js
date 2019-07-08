@@ -7,7 +7,8 @@ $(document).ready(function() {
 	$(two).hide();
 	$(three).show();
 
-	$(".eraser-img").click(function() {
+	// $(".eraser-img").click(function() {
+	$(".chalkb").click(function() {
 		let hasOne = $(this).hasClass("1");
 		let hasTwo = $(this).hasClass("2");
 
