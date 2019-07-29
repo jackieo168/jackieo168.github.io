@@ -58,7 +58,7 @@
 
   .wksheet {
     position: relative;
-    top: 36px;
+    /*top: 36px;*/
     width: 216px;
     height: 300px;
     margin: 20px;
@@ -69,7 +69,7 @@
     position: absolute;
     top: 24px;
     left: 20px;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Quicksand', sans-serif;
     color: purple;
     font-size: 14pt;
     font-weight: bold;
@@ -81,8 +81,9 @@
     background-image: linear-gradient(#dfc9e8, #dbe6ff);
   }
 
+  /*consolidate these*/
   #soln1link {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Quicksand', sans-serif;
     color: purple;
     font-size: 12pt;
     text-decoration: none;
@@ -90,7 +91,7 @@
   }
 
   #soln2link {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Quicksand', sans-serif;
     color: purple;
     font-size: 12pt;
     text-decoration: none;
@@ -98,23 +99,18 @@
   }
 
   #soln3link {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Quicksand', sans-serif;
     color: purple;
     font-size: 12pt;
     text-decoration: none;
     transition-duration: .4s;
   }
 
-  p {
+  /*p {
     font-family: 'Comfortaa', cursive;
     color: purple;
     font-size: 12pt;
     margin-top: 12px;
     margin-bottom: 12px;
-  }
-
-  .instructions {
-    margin-left: 120px;
-    margin-top: 20px;
-  }
+  }*/
 }

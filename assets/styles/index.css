@@ -23,10 +23,10 @@
 	}
 
 	.left-content {
-		width: 280px;
-		font-family: 'Cutive Mono', monospace;
-		padding-left: 52px;
-		padding-right: 52px;
+		width: 480px;
+		font-family: 'Quicksand', sans-serif;
+		padding-left: 20px;
+		padding-right: 20px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
