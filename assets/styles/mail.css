@@ -2,8 +2,8 @@
 
 	/*icon in navbar*/
 	#mail-img {
-		width: 60px;
-		height: 48px;
+		/*width: 60px;
+		height: 48px;*/
 		opacity: 1;
 	}
 
@@ -55,7 +55,7 @@
 		animation-name: loadForm;
 		animation-delay: 0s;
 		animation-duration: 2s;
-		font-family: 'Comfortaa', cursive;
+		font-family: 'Quicksand', sans-serif;
 		font-size: 14pt;
 	}
 
@@ -73,7 +73,7 @@
 
 	form{
 		opacity: 1;
-		font-family: 'Comfortaa', cursive;
+		font-family: 'Quicksand', sans-serif;
 		font-size: 14pt;
 	}
 
@@ -85,7 +85,7 @@
 
 	input[type=text], input[type=email] {
 		padding: 4px 20px;
-		font-family: 'Cutive Mono', monospace;
+		font-family: 'Quicksand', sans-serif;
 		font-size: 14pt;
 		margin-top: 12px;
 		margin-bottom: 12px;
@@ -98,14 +98,15 @@
 
 	textarea {
 		padding: 12px 20px;
-		font-family: 'Cutive Mono', monospace;
+		font-family: 'Quicksand', sans-serif;
 		font-size: 14pt;
 		font-weight: bold;
 		margin-top: 12px;
 		margin-bottom: 12px;
-		height: 312px;
-		width: 459px;
+		height: 200px;
+		width: 450px;
 		border: 4px solid #c6bfc9;
+		border-radius: 2px;
 		resize: none;
 		opacity: .7;
 	}
@@ -113,7 +114,7 @@
 	#submit {
 		cursor: pointer;
 		border-radius:8px;
-		font-family: 'Comfortaa', cursive;
+		font-family: 'Quicksand', sans-serif;
 		font-size: 14pt;
 		width: 88px;
 		height: 44px;
@@ -129,5 +130,13 @@
 	#submit:hover {
 		transform: scale(1.1);
 		transition-duration: .4s;
+	}
+
+	#post-submit-msg {
+		position:absolute;
+		top: 25%;
+		left: 15%;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 14pt;
 	}
 }

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -9,6 +8,8 @@
 		<!-- link CSS, JS, JQuery -->
 		<link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="assets/styles/mail.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/mail.js"></script>
 	</head>
 
 	<body>
@@ -21,9 +22,9 @@
 				<a href="aboutme.html" class="left-nav-button" id="aboutme-button">About Me</a>
 			</div><!--end pull left-->
 			<div id="right-nav-buttons">
-				<div class="right-nav-button">
+				<!-- <div class="right-nav-button">
 					<a href="index.html"><img class="right-nav-item" id="feedback-img" src="assets/images/feedback.png" alt="Anonymous Feedback"></a>
-				</div>
+				</div> -->
 				<div class="right-nav-button">
 					<a href="mail.html"><img class="right-nav-item" id="mail-img" src="assets/images/mail.PNG" alt="Mail"></a>
 				</div>
@@ -35,16 +36,34 @@
 		<div class= "main-content"> <!-- begin main content -->
 			<div class="mail-container">
 				<img class="mail-img" id="mail-img-2" src="assets/images/envelope2.PNG" alt="Envelope 2">
-				<form class="form"> <!-- action="/action_page.php" -->
+
+				<div id="post-submit-msg">
+					<p>I have received your message!</p>
+					<p>Click the mail icon at the top left again to send another message.</p>
+				</div>
+
+				<!-- pre-filled form link -->
+				<!-- https://docs.google.com/forms/d/e/1FAIpQLSczfYc3hosdVWQs5_ZwEQjPVq7SyM391TbNaaiQstyznsuvLw/viewform?usp=pp_url&entry.1096399154=Jacqueline&entry.1093238527=Yeung&entry.1593581557=jtyeung168@berkeley.edu&entry.502137289=Hello! -->
+
+				<!-- source: https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
+
+				<form class="form" name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSczfYc3hosdVWQs5_ZwEQjPVq7SyM391TbNaaiQstyznsuvLw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> 
 				  First name:<br>
-				  <input type="text" id="name" name="name"><br>
+				  <input type="text" id="first name" name="entry.1096399154"><br>
+				  Last name:<br>
+				  <input type="text" id="last name" name="entry.1093238527"><br>
 				  E-mail:<br>
-				  <input type="email" id="email" name="email"><br>
+				  <input type="email" id="email" name="entry.1593581557"><br>
 				  Message:<br>
-				  <textarea id="message" rows="16" cols="56">Your message...</textarea>
+				  <textarea id="message" name="entry.502137289" rows="16" cols="56"></textarea>
 				  <br>
-				  <div id="submit">Submit</div>
+				  <!-- <div id="submit">Submit</div> -->
+				  <input type="submit" id="submit" value="Submit">
 				</form>
+
+				<!-- to prevent redirect -->
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
 			</div>
 		</div> <!-- end main content -->
 
