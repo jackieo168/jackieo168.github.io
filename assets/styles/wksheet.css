@@ -61,7 +61,7 @@
     /*top: 36px;*/
     width: 216px;
     height: 300px;
-    margin: 20px;
+    margin: 32px;
     opacity: .7;
   }
 
@@ -82,7 +82,14 @@
   }
 
   /*consolidate these*/
-  #soln1link {
+  p {
+    font-family: 'Quicksand', sans-serif;
+    color: purple;
+    font-size: 12pt;
+    text-decoration: none;
+    transition-duration: .4s;
+  }
+  /*#soln1link {
     font-family: 'Quicksand', sans-serif;
     color: purple;
     font-size: 12pt;
@@ -105,7 +112,7 @@
     text-decoration: none;
     transition-duration: .4s;
   }
-
+*/
   /*p {
     font-family: 'Comfortaa', cursive;
     color: purple;
