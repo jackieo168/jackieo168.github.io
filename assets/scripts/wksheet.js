@@ -19,7 +19,7 @@ $(document).ready(function() {
 	function getSoln0() {
 		let val0 = slider0.value;
 		var solnstr0 = "View Solution";
-		var solnLink0 = solnstr0.link("");
+		var solnLink0 = solnstr0.link("https://cs61a.org/disc/disc00_sol.pdf");
 		if(val0 == 100) {
 			document.getElementById("soln0link").innerHTML = solnLink0;
 		} else {

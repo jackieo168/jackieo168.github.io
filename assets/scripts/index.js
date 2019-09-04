@@ -17,8 +17,8 @@ $(document).ready(function() {
 	let sixteen = document.getElementById("16");
 	let seventeen = document.getElementById("17");
 
-	$(one).show();
-	$(two).hide();
+	$(one).hide();
+	$(two).show();
 	$(three).hide();
 	$(four).hide();
 	$(five).hide();
