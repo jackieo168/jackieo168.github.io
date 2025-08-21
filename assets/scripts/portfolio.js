@@ -1,5 +1,5 @@
 function redirectToNextPage() {
-    window.location.href = 'portfolio.html'; 
+    window.location.href = 'aboutme.html'; 
 }
 
 function redirectToPreviousPage() {

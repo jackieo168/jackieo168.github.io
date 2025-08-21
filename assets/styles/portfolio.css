@@ -1,12 +1,12 @@
 @media screen{
-    #aboutme-button {
+    #portfolio-button {
         color: white;
         background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
         opacity: .8;
         box-shadow: var(--box-shadow);
 	}
 
-    #aboutme-button:hover {
+    #portfolio-button:hover {
         transition-duration: 1s;
 		opacity: 1;
     }
