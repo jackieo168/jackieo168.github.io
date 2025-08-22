@@ -10,4 +10,42 @@
         transition-duration: 1s;
 		opacity: 1;
     }
+
+    .aboutme-tiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    }
+
+    .aboutme-tile {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border: none;
+        height: 340px;
+        box-sizing: border-box;
+    }
+
+    .aboutme-tile > img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: var(--box-shadow);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .aboutme-tile > p {
+        font-family: var(--font-family);
+        font-size: 10pt;
+        text-align: center;
+        width: 180px;
+        margin: 12px auto 0 auto;
+    }
 }
