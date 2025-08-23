@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title> Jacqueline's Teaching Website </title>
+		<meta charset="utf-8" content="width=device-width, initial-scale=1">
+		<title> Jacqueline Yeung | Home </title>
 		<!-- fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Cutive+Mono|Gloria+Hallelujah|Inconsolata|Indie+Flower|Pangolin|Quicksand:300,400|Roboto+Mono:300" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css?family=Google Sans Code|Lexend:100,200,300,400,500,600,700|Roboto+Mono:300" rel="stylesheet">		
 		<!-- link CSS, JS, JQuery -->
-		<link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles/global.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="assets/scripts/index.js"></script>
+        <script type="text/javascript" src="assets/scripts/global.js"></script>
 	</head>
 
 	<body>
 
-		<nav> <!-- begin navbar -->
-			<div id="left-nav-buttons">
-				<a href="index.html" class="left-nav-button" id="home-button">Home</a>
-				<a href="wksheet.html" class="left-nav-button" id="wksheet-button">Worksheets</a>
-				<a href="guides.html" class="left-nav-button" id="guides-button">Guides</a>
-				<a href="aboutme.html" class="left-nav-button" id="aboutme-button">About Me</a>
+		<nav class="top-nav-bar"> <!-- begin navbar -->
+			<div class="left-nav-buttons">
+				<button onclick="onButtonClick('index.html')" class="left-nav-button" id="home-button">Home</button>
+				<button onclick="onButtonClick('portfolio.html')" class="left-nav-button" id="portfolio-button">Portfolio</button>
 			</div><!--end pull left-->
-			<div id="right-nav-buttons">
-				<!-- <div class="right-nav-button">
-					<a href="index.html"><img class="right-nav-item" id="feedback-img" src="assets/images/feedback.png" alt="Anonymous Feedback"></a>
-				</div> -->
-				<div class="right-nav-button">
-					<a href="mail.html"><img class="right-nav-item" id="mail-img" src="assets/images/mail.PNG" alt="Mail"></a>
-				</div>
+			<div class="right-nav-buttons">
+				<button class="right-nav-button icon-button" onclick="onButtonClick('mailto:jtyeung168@berkeley.edu')" alt="Contact Me"><i class="fa fa-paper-plane"></i></button>
 			</div><!--end pull right-->
 		</nav><!--end navbar-->
 
@@ -35,290 +30,51 @@
 
 		<div class= "main-content"> <!-- begin main content -->
 			<div class= "left-content">
-				<div id= "intro"><h1>WELCOME TO MY TEACHING WEBSITE!</h1></div>
-				<div id= "schedule">
-					<h3>Jacqueline Tiffany Yeung</h3>
-					<p> I teach a no prior experience section </p>
-					<h4>Lab Section:</h4>
-						<p> Wed 8 - 9:30 AM </p>
-						<p> Soda 273 </p>
-					<h4>Discussion Section:</h4>
-						<p> Fri 8 - 9:30 AM </p>
-						<p> Soda 320 </p>
-					<h4>Lecture:</h4>
-						<p> Mon, Wed 2:10 - 3 PM Pimentel 1</p>
-						<p> Fri 2:10 - 3 PM 105 Stanley</p>
-						<p> Course Website: <a id="link" href="https://cs61a.org"> cs61a.org </a></p> 
+				<div class="main-content-element" id= "intro"><h1>Hi, I'm Jacqueline.</h1></div>
+				<div class="main-content-element" id= "subintro">
+					<p> I'm a software engineer with a passion for all things Big Data. </p>
+                    <div class="row-element">
+                        <div id="current-activities">
+                            <h3>Current Activities</h3>
+                            <p> MTS @ <a class="link" href="https://www.salesforce.com/data/"> Salesforce Data Cloud </a> 
+                            <br> <a class="link" href="https://www.ischool.berkeley.edu/programs/mids"> MIDS</a> @ <a class="link" href="https://www.berkeley.edu/"> UC Berkeley </a> <a class="link" href="https://www.ischool.berkeley.edu/"> ISchool </a> </p>
+                        </div>
+                        <div id="location">
+                            <h3>Location &#128205;</h3>
+                            <p> SF Bay Area, US <br> + remote </p>
+                        </div>
+                    </div>
+                    <div class="row-element">
+                        <div id="education">
+                            <h3>Education</h3>
+                            <div id="edu-images">
+                                <img class="edu-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/82/University_of_California%2C_Berkeley_logo.svg" alt="UC Berkeley Logo">
+                                <img class="edu-logo" src="assets/images/berkeleyischool-logo-vertical-blue.svg" alt="UC Berkeley ISchool Logo">
+                            </div>
+                        </div>
+                        <div id="links">
+                            <h3>Links &#128279;</h3>
+                            <div id="link-buttons">
+                                <button class="icon-button" onclick="onButtonClick('https://github.com/jackieo168')" alt="GitHub"> <i class="fa fa-github"></i></button>
+                                <button class="icon-button" onclick="onButtonClick('https://www.linkedin.com/in/jacquelineyeung8')" alt="LinkedIn"> <i class="fa fa-linkedin"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p> Reach out at <a class="link" href="mailto:jtyeung168@berkeley.edu">jtyeung168@berkeley.edu</a> or click the <i class="fa fa-paper-plane"></i> !
+                    <br> Check out my portfolio below.</p>
 				</div>
 			</div>
 
 			<div class= "right-content">
-
-				<div class= "announcements">
-					<img id="chalkboard-img" src="assets/images/chalkboard.PNG" alt="Chalkboard"> 
-
-					<div class="week" id="1">
-						<div class="announcements-title" id="1">
-							<div class="announcements-header" id="1">Announcements</div>
-							<div class="week-num" id="1">Week 1</div>
-						</div>
-						<div class="announcements-txt" id="1">
-							<ul>
-								<li> Lecture for this week will take place in Zellerbach </li>
-								<li> Labs will start next week. This week's lab is take-home </li>
-								<li> Lectures for next week will proceed as normal: MW Pimentel 1, F 105 Stanley </li> 
-								<li> This week's lab: <a id="link" href="https://cs61a.org/lab/lab00/"> Lab 0 </a> </li>
-							</ul>
-						</div>
-						<div class="chalk 2"> -> </div> 
-					</div>
-
-					<div class="week" id="2">
-						<div class="announcements-title" id="2">
-							<div class="announcements-header" id="2">Announcements</div>
-							<div class="week-num" id="2">Week 2</div>
-						</div>
-						<div class="announcements-txt" id="2">
-							<ul>
-								<li> CLARIFICATION: <a id="link" href="https://cs61a.org/lab/lab00/"> Lab 0 </a> is due THIS Friday at midnight </li>
-								<li> <a id='link' href='https://cs61a.org/disc/disc00.pdf'> Discussion 0 </a> & <a id='link' href='https://cs61a.org/disc/disc00_sol.pdf'> solutions </a> updated on website </li> 
-								<li> <a id="link" href='https://cs61a.org/hw/hw01/'> HW 1 </a> is due this Thursday at midnight</li>
-								<li> <a id="link" href='https://cs61a.org/proj/hog/'> Hog </a> is released and due next Thursday</li>
-								<li> This week's lab: <a id="link" href="https://cs61a.org/lab/lab01/"> Lab 1 </a> </li>
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 1" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 1"> <- </div>
-						<div class="chalk 3"> -> </div> 
-					</div>
-
-					<div class="week" id="3">
-						<div class="announcements-title" id="3">
-							<div class="announcements-header" id="3">Announcements</div>
-							<div class="week-num" id="3">Week 3</div>
-						</div>
-						<div class="announcements-txt" id="3">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 2"> <- </div>
-						<div class="chalk 4"> -> </div>
-					</div>
-
-					<div class="week" id="4">
-						<div class="announcements-title" id="4">
-							<div class="announcements-header" id="4">Announcements</div>
-							<div class="week-num" id="4">Week 4</div>
-						</div>
-						<div class="announcements-txt" id="4">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 3"> <- </div>
-						<div class="chalk 5"> -> </div>
-					</div>
-
-					<div class="week" id="5">
-						<div class="announcements-title" id="5">
-							<div class="announcements-header" id="5">Announcements</div>
-							<div class="week-num" id="5">Week 5</div>
-						</div>
-						<div class="announcements-txt" id="5">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 4"> <- </div>
-						<div class="chalk 6"> -> </div>
-					</div>
-
-					<div class="week" id="6">
-						<div class="announcements-title" id="6">
-							<div class="announcements-header" id="6">Announcements</div>
-							<div class="week-num" id="6">Week 6</div>
-						</div>
-						<div class="announcements-txt" id="6">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 5"> <- </div>
-						<div class="chalk 7"> -> </div>
-					</div>
-
-					<div class="week" id="7">
-						<div class="announcements-title" id="7">
-							<div class="announcements-header" id="7">Announcements</div>
-							<div class="week-num" id="7">Week 7</div>
-						</div>
-						<div class="announcements-txt" id="7">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 6"> <- </div>
-						<div class="chalk 8"> -> </div>
-					</div>
-
-					<div class="week" id="8">
-						<div class="announcements-title" id="8">
-							<div class="announcements-header" id="8">Announcements</div>
-							<div class="week-num" id="8">Week 8</div>
-						</div>
-						<div class="announcements-txt" id="8">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 7"> <- </div>
-						<div class="chalk 9"> -> </div>
-					</div>
-
-					<div class="week" id="9">
-						<div class="announcements-title" id="9">
-							<div class="announcements-header" id="9">Announcements</div>
-							<div class="week-num" id="9">Week 9</div>
-						</div>
-						<div class="announcements-txt" id="9">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 8"> <- </div>
-						<div class="chalk 10"> -> </div>
-					</div>
-
-					<div class="week" id="10">
-						<div class="announcements-title" id="10">
-							<div class="announcements-header" id="10">Announcements</div>
-							<div class="week-num" id="10">Week 10</div>
-						</div>
-						<div class="announcements-txt" id="10">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 9"> <- </div>
-						<div class="chalk 11"> -> </div>
-					</div>
-
-					<div class="week" id="11">
-						<div class="announcements-title" id="11">
-							<div class="announcements-header" id="11">Announcements</div>
-							<div class="week-num" id="11">Week 11</div>
-						</div>
-						<div class="announcements-txt" id="11">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 10"> <- </div>
-						<div class="chalk 12"> -> </div>
-					</div>
-
-					<div class="week" id="12">
-						<div class="announcements-title" id="12">
-							<div class="announcements-header" id="12">Announcements</div>
-							<div class="week-num" id="12">Week 12</div>
-						</div>
-						<div class="announcements-txt" id="12">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 11"> <- </div>
-						<div class="chalk 13"> -> </div>
-					</div>
-
-					<div class="week" id="13">
-						<div class="announcements-title" id="13">
-							<div class="announcements-header" id="13">Announcements</div>
-							<div class="week-num" id="13">Week 13</div>
-						</div>
-						<div class="announcements-txt" id="13">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 12"> <- </div>
-						<div class="chalk 14"> -> </div>
-					</div>
-
-					<div class="week" id="14">
-						<div class="announcements-title" id="14">
-							<div class="announcements-header" id="14">Announcements</div>
-							<div class="week-num" id="14">Week 14</div>
-						</div>
-						<div class="announcements-txt" id="14">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 13"> <- </div>
-						<div class="chalk 15"> -> </div>
-					</div>
-
-					<div class="week" id="15">
-						<div class="announcements-title" id="15">
-							<div class="announcements-header" id="15">Announcements</div>
-							<div class="week-num" id="15">Week 15</div>
-						</div>
-						<div class="announcements-txt" id="15">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 14"> <- </div>
-						<div class="chalk 16"> -> </div>
-					</div>
-
-					<div class="week" id="16">
-						<div class="announcements-title" id="16">
-							<div class="announcements-header" id="16">Announcements</div>
-							<div class="week-num" id="16">Week 16</div>
-						</div>
-						<div class="announcements-txt" id="16">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 15"> <- </div>
-						<div class="chalk 17"> -> </div>
-					</div>
-
-					<div class="week" id="17">
-						<div class="announcements-title" id="17">
-							<div class="announcements-header" id="17">Announcements</div>
-							<div class="week-num" id="17">Week 17</div>
-						</div>
-						<div class="announcements-txt" id="17">
-							<ul>
-								<!-- content here -->
-							</ul>
-						</div>
-						<!-- <img class="eraser-img 2" src="assets/images/eraser.PNG" alt="Eraser"> -->
-						<div class="chalkb 16"> <- </div>
-					</div>
-				  	
-				</div>
-				<div id="dir"> Click arrows to navigate between weekly announcements.</div>	
+                <img class="main-content-element" id="portrait-img" src="assets/images/portrait.JPG" alt="Portrait"> 
 			</div>	
 		</div> <!-- end main content -->
+        
+        <!-- -------------------------------------------------------- -->
+
+        <nav class="bottom-nav-bar"> <!-- begin navbar -->
+            <button onclick="onButtonClick('portfolio.html')" class="bottom-nav-button" id="portfolio-down-button">Portfolio <br> <i class="fa fa-angle-down" style="font-size: 24pt; font-weight: 600;"></i> </button>
+		</nav><!--end navbar-->
 	</body>
 </html>
