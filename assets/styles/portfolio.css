@@ -12,24 +12,37 @@
     }
 
     .main-content {
+        display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10% 15% 20% 15%;
 	}
 
-    .icons {
-        padding-top: 8px;
-        display: grid;
+    .skillset-content {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 0px;
+    }
+
+    .skillset {
         width: fit-content;
-        height: fit-content;
-        grid-template-columns: repeat(6, min-content);
-        grid-template-rows: repeat(auto-fit, max-content);
-        gap: 24px;
+    }
+
+    .icons {
+        padding: 8px 0 8px 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 0px;
     }
     
     .icon {
-        padding: 16px;
-        width: fit-content;
-        display:flex;
+        padding: 0 16px 0 16px;
+        width: min-content;
+        height: max-content;
+        display: flex;
         flex-direction: column;
         text-align: center;
         border: none;
@@ -44,34 +57,154 @@
         border-radius: 16px;
         box-shadow: var(--box-shadow);
         padding: 8px;
+        margin: 4px;
     }
 
     .icon > p {
         font-family: var(--font-family);
         font-size: 10pt;
+        line-height: 1.5;
     }
 
+    .icon > img:hover {
+        transition-duration: .3s;
+        box-shadow: var(--box-shadow-dark);
+        transform: translateY(-4px);
+    }
+
+    .link {
+		color: var(--secondary-color-light);
+	}
+
     .project-tiles {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 24px;
         margin: 32px 0;
-        padding-bottom: 240px;
     }
 
     .project-tile {
-        background: linear-gradient(to right bottom, lightblue, var(--secondary-color-light), var(--primary-color-light));
         border-radius: 8px;
-        box-shadow: var(--box-shadow);
-        padding: 16px;
+        box-shadow: var(--box-shadow-dark);
+        padding: 20px;
         text-align: center;
         border: none;
     }
 
-    .project-tile img {
-        width: 100%;
-        height: auto;
-        border-radius: 6px;
-        margin-bottom: 12px;
+    .project-tile::before {
+        pointer-events: none;
+    }
+
+    .project-tile:hover {
+        transition-duration: .3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.5);
+        transform: translateY(-4px);
+    }
+
+    .project-desc > p {
+        font-size: 12pt;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    .project-details {
+        text-align: left;
+    }
+
+    #project1 {
+        position: relative;
+    }
+
+    #project1::before {
+        border-radius: 8px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/RAG.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2; /* Low opacity for image */
+        z-index: 0;
+    }
+    
+    #project2 {
+        position: relative;
+    }
+
+    #project2::before {
+        border-radius: 8px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/brain-tumor-mri.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2; /* Low opacity for image */
+        z-index: 0;
+    }
+
+    #project3 {
+        position: relative;
+    }
+
+    #project3::before {
+        border-radius: 8px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/flight-delay.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2; /* Low opacity for image */
+        z-index: 0;
+    }
+
+    #project4 {
+        position: relative;
+    }
+
+    #project4::before {
+        border-radius: 8px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/expedia-hotel-search.jpg');
+        /* background-size: cover; */
+        /* background-position: center; */
+        opacity: 0.2; /* Low opacity for image */
+        z-index: 0;
+    }
+
+    #project5 {
+        position: relative;
+    }
+
+    #project5::before {
+        border-radius: 8px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/biondi-bodies.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2; /* Low opacity for image */
+        z-index: 0;
+    }
+
+    #project6 {
+        position: relative;
+    }
+
+    #project6::before {
+        border-radius: 8px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/web-dev.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2; /* Low opacity for image */
+        z-index: 0;
     }
 }

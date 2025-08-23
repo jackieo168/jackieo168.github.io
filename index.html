@@ -16,13 +16,13 @@
 
 	<body>
 
-		<nav> <!-- begin navbar -->
-			<div id="left-nav-buttons">
+		<nav class="top-nav-bar"> <!-- begin navbar -->
+			<div class="left-nav-buttons">
 				<button onclick="onButtonClick('index.html')" class="left-nav-button" id="home-button">Home</button>
 				<button onclick="onButtonClick('portfolio.html')" class="left-nav-button" id="portfolio-button">Portfolio</button>
 			</div><!--end pull left-->
-			<div id="right-nav-buttons">
-				<button class="fa fa-paper-plane right-nav-button" id="icon-button" onclick="onButtonClick('mailto:jtyeung168@berkeley.edu')" alt="Contact Me"></button>
+			<div class="right-nav-buttons">
+				<button class="right-nav-button icon-button" onclick="onButtonClick('mailto:jtyeung168@berkeley.edu')" alt="Contact Me"><i class="fa fa-paper-plane"></i></button>
 			</div><!--end pull right-->
 		</nav><!--end navbar-->
 
@@ -30,33 +30,51 @@
 
 		<div class= "main-content"> <!-- begin main content -->
 			<div class= "left-content">
-				<div class="main-content-element" id= "intro"><h1>Hi, <br> I'm Jacqueline.</h1></div>
+				<div class="main-content-element" id= "intro"><h1>Hi, I'm Jacqueline.</h1></div>
 				<div class="main-content-element" id= "subintro">
 					<p> I'm a software engineer with a passion for all things Big Data. </p>
-                    <div id="current-activities-and-location">
+                    <div class="row-element">
                         <div id="current-activities">
                             <h3>Current Activities</h3>
-                            <p> MTS @ <a class="link" href="https://www.salesforce.com/data/"> Salesforce Data Cloud </a> </p>
-                            <p> <a class="link" href="https://www.ischool.berkeley.edu/programs/mids"> MIDS</a> @ <a class="link" href="https://www.berkeley.edu/"> UC Berkeley </a> <a class="link" href="https://www.ischool.berkeley.edu/"> ISchool </a> </p>
+                            <p> MTS @ <a class="link" href="https://www.salesforce.com/data/"> Salesforce Data Cloud </a> 
+                            <br> <a class="link" href="https://www.ischool.berkeley.edu/programs/mids"> MIDS</a> @ <a class="link" href="https://www.berkeley.edu/"> UC Berkeley </a> <a class="link" href="https://www.ischool.berkeley.edu/"> ISchool </a> </p>
                         </div>
                         <div id="location">
                             <h3>Location &#128205;</h3>
                             <p> SF Bay Area, US <br> + remote </p>
                         </div>
                     </div>
-                    <div id="links">
-                        <h3>Links &#128279;</h3>
-                        <div id="link-buttons">
-                            <button class="fa fa-github" id="icon-button" onclick="onButtonClick('https://github.com/jackieo168')" alt="GitHub"></button>
-                            <button class="fa fa-linkedin" id="icon-button" onclick="onButtonClick('https://www.linkedin.com/in/jacquelineyeung8')" alt="LinkedIn"></button>
+                    <div class="row-element">
+                        <div id="education">
+                            <h3>Education</h3>
+                            <div id="edu-images">
+                                <img class="edu-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/82/University_of_California%2C_Berkeley_logo.svg" alt="UC Berkeley Logo">
+                                <img class="edu-logo" src="assets/images/berkeleyischool-logo-vertical-blue.svg" alt="UC Berkeley ISchool Logo">
+                            </div>
+                        </div>
+                        <div id="links">
+                            <h3>Links &#128279;</h3>
+                            <div id="link-buttons">
+                                <button class="icon-button" onclick="onButtonClick('https://github.com/jackieo168')" alt="GitHub"> <i class="fa fa-github"></i></button>
+                                <button class="icon-button" onclick="onButtonClick('https://www.linkedin.com/in/jacquelineyeung8')" alt="LinkedIn"> <i class="fa fa-linkedin"></i></button>
+                            </div>
                         </div>
                     </div>
+                    <br>
+                    <p> Reach out at <a class="link" href="mailto:jtyeung168@berkeley.edu">jtyeung168@berkeley.edu</a> or click the <i class="fa fa-paper-plane"></i> !
+                    <br> Check out my portfolio below.</p>
 				</div>
 			</div>
 
 			<div class= "right-content">
-                <img id="portrait-img" src="assets/images/portrait.JPG" alt="Portrait"> 
+                <img class="main-content-element" id="portrait-img" src="assets/images/portrait.JPG" alt="Portrait"> 
 			</div>	
 		</div> <!-- end main content -->
+        
+        <!-- -------------------------------------------------------- -->
+
+        <nav class="bottom-nav-bar"> <!-- begin navbar -->
+            <button onclick="onButtonClick('portfolio.html')" class="bottom-nav-button" id="portfolio-down-button">Portfolio <br> <i class="fa fa-angle-down" style="font-size: 24pt; font-weight: 600;"></i> </button>
+		</nav><!--end navbar-->
 	</body>
 </html>

@@ -13,29 +13,55 @@
     }
 
     .main-content {
-		display: flex;
-		justify-content: space-between; 
-        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 15% 10% 10% 15%;
 	}
 
-    #current-activities-and-location {
+    .left-content {
+		width: 40%;
+		font-family: var(--font-family);
+		padding: 0 16px;
+		margin: 0 16px;
         display: flex;
-        justify-content: space-between;
-        align-items: top;
-        padding-right: 56px;
-    }
+        flex-direction: column;
+		align-items: center;
+        justify-content: space-evenly;
+	}
+
+    .right-content {
+        width: 25%;
+        height: 568px;
+		font-family: var(--font-family);
+		padding: 0 16px;
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+	}
 
     #portrait-img {
         height: 100%;
         object-fit: cover;
-        border-bottom-right-radius: 64px;
-        border-bottom-left-radius: 168px;
-        border-top-left-radius: 64px;
-        border-top-right-radius: 168px;
+        border-radius: 64px 168px 64px 168px;
         box-shadow: var(--box-shadow);
     }
 
     #link-buttons {
         word-spacing: 4px;
+        padding-bottom: 4px;
+    }
+
+    #edu-images {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .edu-logo {
+        height: 40px;
+        object-fit: contain;
     }
 }

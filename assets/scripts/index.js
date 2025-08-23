@@ -1,7 +1,3 @@
 function redirectToNextPage() {
     window.location.href = 'portfolio.html'; 
 }
-
-function redirectToPreviousPage() {
-    window.location.href = 'index.html'; 
-}

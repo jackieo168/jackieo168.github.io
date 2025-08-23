@@ -16,13 +16,13 @@
 
 	<body>
 
-		<nav> <!-- begin navbar -->
-			<div id="left-nav-buttons">
+		<nav class="top-nav-bar"> <!-- begin navbar -->
+			<div class="left-nav-buttons">
 				<button onclick="onButtonClick('index.html')" class="left-nav-button" id="home-button">Home</button>
 				<button onclick="onButtonClick('portfolio.html')" class="left-nav-button" id="portfolio-button">Portfolio</button>
 			</div><!--end pull left-->
-			<div id="right-nav-buttons">
-				<button class="fa fa-paper-plane right-nav-button" id="icon-button" onclick="onButtonClick('mailto:jtyeung168@berkeley.edu')" alt="Contact Me"></button>
+			<div class="right-nav-buttons">
+				<button class="right-nav-button icon-button" onclick="onButtonClick('mailto:jtyeung168@berkeley.edu')" alt="Contact Me"><i class="fa fa-paper-plane"></i></button>
 			</div><!--end pull right-->
 		</nav><!--end navbar-->
 
@@ -31,12 +31,110 @@
 		<div class= "main-content"> <!-- begin main content -->
             <div class="main-content-element" id="portfolio-intro">
                 <h1>Portfolio</h1>
-                <p>Welcome to my portfolio! Here you can find some of my key skillsets along with the projects I've worked on.</p>
+                <p>Welcome to my portfolio! Here you can find some of the key projects I've worked on along with skillsets I've gained throughout industry and beyond.</p>
+            </div>
+            <div class="main-content-element" id="projects">
+                <h2>Projects</h2>
+                <p>Here are some of the projects I've worked on. Most of them are related to data science and were completed during my Master's program, MIDS at UC Berkeley.</p>
+                <div class="project-tiles">
+                    <div class="project-tile" id="project1">
+                        <div class="project-desc">
+                            <h3>GenAI Project</h3> 
+                            <p><b>RAG System For Marketing Vs. Research QA</b></p>
+                            <p class="project-details">
+                                Built and optimized a RAG + LLM pipeline to generate quality responses for 2 different user personas: marketers vs. researchers.
+                                <br>
+                                <br> <b>Class:</b> DATASCI 267 (Generative AI, MIDS)
+                                <br>
+                                <br>
+                                <i class="fa fa-link"></i>: 
+                                <a class="link" href="https://docs.google.com/document/d/1lWaSkh2c3cfnoc4y2O0x6O_uyL4xirlVKQdTJeFaTyQ/edit?usp=sharing">report</a>,
+                                <a class="link" href="https://drive.google.com/file/d/1RYPhSjuuI8Rq7Iqth0qwCwkZLDLxG6p7/view?usp=sharing">Google Colab notebook</a>
+                        </div>
+                    </div>
+                    <div class="project-tile" id="project2">
+                        <div class="project-desc">
+                            <h3>Computer Vision Project</h3> 
+                            <p><b>Brain Tumor Classification</b></p>
+                            <p class="project-details">
+                                Built and optimized different computer vision features (e.g. Canny Edges, DoH, DoG), ViT-based features, and classification models to classify 4 types of brain tumor classes from MRI images with 96.7% test accuracy.
+                                <br>
+                                <br> <b>Class:</b> DATASCI 281 (Computer Vision, MIDS)
+                                <br>
+                                <br>
+                                <i class="fa fa-link"></i>: 
+                                <a class="link" href="https://github.com/Richard-Yan-UCB/datasci281_final_project/blob/main/Brain%20Tumor%20Classification%20Report.pdf">report</a>,
+                                <a class="link" href="https://github.com/Richard-Yan-UCB/datasci281_final_project/blob/main/Brain%20Tumor%20Classification%20Presentation.pdf">presentation</a>,
+                                <a class="link" href="https://github.com/Richard-Yan-UCB/datasci281_final_project/tree/main">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-tile" id="project3">
+                        <div class="project-desc">
+                            <h3>ML at Scale Project</h3> 
+                            <p><b>Predicting Flight Delays</b></p>
+                            <p class="project-details">
+                                Built and optimized a distributed ML pipeline using PySpark to analyze a timeseries dataset of 30M+ flights (along with secondary datasets) and predict flight delays at least 2 hours in advance.
+                                <br>
+                                <br> <b>Class:</b> DATASCI 261 (ML at Scale, MIDS)
+                                <br>
+                                <br>
+                                <i class="fa fa-link"></i>: 
+                                <a class="link" href="https://github.com/dojian/Airline_delay/blob/main/Team%203-3%20Phase%203.ipynb">report</a>
+                        </div>
+                    </div>
+                    <div class="project-tile" id="project4">
+                        <div class="project-desc">
+                            <h3>ML Classification Project</h3> 
+                            <p><b>Predicting Expedia Hotel Clusters</b></p>
+                            <p class="project-details">
+                                Built and optimized an ML pipeline to analyze Expedia hotel search data and predict the corresponding hotel cluster (100 classes).
+                                <br>
+                                <br> <b>Class:</b> DATASCI 207 (Applied ML, MIDS)
+                                <br>
+                                <br>
+                                <i class="fa fa-link"></i>: 
+                                <a class="link" href="https://docs.google.com/presentation/d/1-pcSyK1l_r0RX_IFDqABT-mwTyHLP6frWBb4SR-frSg/edit?usp=sharing">presentation</a>,
+                                <a class="link" href="https://colab.research.google.com/drive/1FUUARzVDP846IpGqz5ZiUXnu9GbNKbP_?usp=sharing">Google Colab notebook</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-tile" id="project5">
+                        <div class="project-desc">
+                            <h3>Volunteer Software Development Project</h3> 
+                            <p><b>3D Biondi Body Box Client</b></p>
+                            <p class="project-details">
+                                Volunteered for the Monuki Lab at UC Irvine to develop a 3D bounding box annotation tool for biondi bodies in 3D images of the choroid plexus.
+                                <br>
+                                <br> <b>Organization:</b> <a class="link" href="https://faculty.sites.uci.edu/monukilab/">The Monuki Lab at UC Irvine</a>
+                                <br>
+                                <br>
+                                <i class="fa fa-link"></i>: 
+                                <a class="link" href="https://github.com/jackieo168/biondi_3Dbox_client">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-tile" id="project6">
+                        <div class="project-desc">
+                            <h3>Web Development Project</h3> 
+                            <p><b>Personal Website</b></p>
+                            <p class="project-details">
+                                Designed and developed this personal portfolio website from scratch, using HTML, CSS, and JavaScript.
+                                <br>
+                                <br>
+                                <i class="fa fa-link"></i>: 
+                                <a class="link" href="https://github.com/jackieo168/jackieo168.github.io">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Add more tiles as needed -->
+                </div>
             </div>
             <div class="main-content-element" id="skillsets">
                 <h2>Skillsets</h2>
-                <ul>
-                    <li><h3>Big Data Technologies</h3>
+                <p>Here is a summary of the key skills I've developed and technologies I've worked with in industry and academia.</p>
+                <div class="skillset-content">
+                    <div class="skillset">
+                        <h3>Big Data Technologies</h3>
                         <div class="icons">
                             <div class="icon">
                                 <img class="icon-img" src="assets/images/icons/AWS.svg" alt="AWS Logo">
@@ -63,8 +161,9 @@
                                 <p>Apache Spark</p>
                             </div>
                         </div>
-                    </li>
-                    <li><h3>Machine Learning</h3>
+                    </div>
+                    <div class="skillset">
+                        <h3>Machine Learning</h3>
                         <div class="icons">
                             <div class="icon">
                                 <img class="icon-img" src="assets/images/icons/scikit-learn.svg" alt="scikit-learn Logo">
@@ -79,8 +178,22 @@
                                 <p>PyTorch</p>
                             </div>
                         </div>
-                    </li>
-                    <li><h3>Software Engineering</h3>
+                    </div>
+                    <div class="skillset">
+                        <h3>Data Analysis</h3>
+                        <div class="icons">
+                            <div class="icon">
+                                <img class="icon-img" src="assets/images/icons/Pandas.svg" alt="Pandas Logo">
+                                <p>Pandas</p>
+                            </div>
+                            <div class="icon">
+                                <img class="icon-img" src="assets/images/icons/NumPy.svg" alt="NumPy Logo">
+                                <p>NumPy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <h3>Software Engineering</h3>
                         <div class="icons">
                             <div class="icon">
                                 <img class="icon-img" src="assets/images/icons/Java.svg" alt="Java Logo">
@@ -107,20 +220,9 @@
                                 <p>Kubernetes</p>
                             </div>
                         </div>
-                    </li>
-                    <li><h3>Data Analysis</h3>
-                        <div class="icons">
-                            <div class="icon">
-                                <img class="icon-img" src="assets/images/icons/Pandas.svg" alt="Pandas Logo">
-                                <p>Pandas</p>
-                            </div>
-                            <div class="icon">
-                                <img class="icon-img" src="assets/images/icons/NumPy.svg" alt="NumPy Logo">
-                                <p>NumPy</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li><h3>Web Development</h3>
+                    </div>
+                    <div class="skillset">
+                        <h3>Web Development</h3>
                         <div class="icons">
                             <div class="icon">
                                 <img class="icon-img" src="assets/images/icons/HTML5.svg" alt="HTML5 Logo">
@@ -135,39 +237,15 @@
                                 <p>JavaScript</p>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="main-content-element" id="projects">
-                <h2>Projects</h2>
-                <div class="project-tiles">
-                    <button class="project-tile">
-                        <img src="assets/images/project1.png" alt="Project 1">
-                        <div class="project-desc"><h3>GenAI Project</h3> <p>RAG System For Marketing Vs. Research QA</p></div>
-                    </button>
-                    <button class="project-tile">
-                        <img src="assets/images/project2.png" alt="Project 2">
-                        <div class="project-desc"><h3>Computer Vision Project</h3> <p>MRI Brain Tumor Classification</p></div>
-                    </button>
-                    <button class="project-tile">
-                        <img src="assets/images/project3.png" alt="Project 3">
-                        <div class="project-desc"><h3>ML at Scale Project</h3> <p>Predicting Flight Delays</p></div>
-                    </button>
-                    <button class="project-tile">
-                        <img src="assets/images/project4.png" alt="Project 4">
-                        <div class="project-desc"><h3>Volunteer Software Development Project</h3> <p>3D Biondi Body Box Client</p></div>
-                    </button>
-                    <button class="project-tile">
-                        <img src="assets/images/project5.png" alt="Project 5">
-                        <div class="project-desc"><h3>Web Development Project</h3> <p>Personal Website</p></div>
-                    </button>
-                    <button class="project-tile">
-                        <img src="assets/images/project6.png" alt="Project 6">
-                        <div class="project-desc"><h3>ML Exploration Project</h3> <p>Predicting Expedia Hotel Clusters</p></div>
-                    </button>
-                    <!-- Add more tiles as needed -->
+                    </div>
                 </div>
             </div>
 		</div> <!-- end main content -->
+
+        <!-- -------------------------------------------------------- -->
+
+        <nav class="bottom-nav-bar"> <!-- begin navbar -->
+            <button onclick="onButtonClick('index.html')" class="bottom-nav-button" id="home-up-button"><i class="fa fa-angle-up" style="font-size: 24pt; font-weight: 600;"></i> <br> Home </button>
+		</nav><!--end navbar-->
 	</body>
 </html>
