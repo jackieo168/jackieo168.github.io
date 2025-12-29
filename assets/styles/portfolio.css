@@ -207,4 +207,20 @@
         opacity: 0.2; /* Low opacity for image */
         z-index: 0;
     }
+
+    #project7 {
+        position: relative;
+    }
+
+    #project7::before {
+        border-radius: 8px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/vulnguard.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2; /* Low opacity for image */
+        z-index: 0;
+    }
 }
